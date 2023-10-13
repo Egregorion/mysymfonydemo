@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RentalController!{% endblock %}
+
+{% block body %}
+    {% for rental in rentals %}
+        <h2>{{ rental.name }}</h2>
+        <span>{{ rental.category }}</span>
+        <address>{{ rental.address }}</address>
+        <p>Ce logement propose {{ rental.beds }} couchage(s)</p>
+        <span>{{ rental.price }}€/nuit</span>
+    {% endfor %}
+{% endblock %}

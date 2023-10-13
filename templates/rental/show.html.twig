@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Appart à louer avec {{ rental.beds }} couchages {% endblock %}
+
+{% block body %} 
+    <h1>{{ rental.name }}</h1>
+    <address>{{ rental.address }}</address>
+    <p>Ce logement propose {{ rental.beds }} couchage(s)</p>
+    <span>{{ rental.price }}€/nuit</span>
+{% endblock %}
